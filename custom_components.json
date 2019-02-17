@@ -1,0 +1,8 @@
+{
+"evohome_cc": {
+        "version":         "0.1",
+        "local_location":  "custom_components/weather/cambridge_dcst.py",
+        "remote_location": "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/cambridge_dcst.py",
+        "changelog":       "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/CHANGELOG.md",
+        "visit_repo":      "https://github.com/quentinsf/weather_cambridge_dcst"
+}
