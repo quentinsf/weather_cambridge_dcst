@@ -6,13 +6,22 @@ This is a custom component for [Home Assistant](https://home-assistant.io) that 
 
 ## Installation
 
-Note that the directory layout for custom components will be changing in Home Assistant 0.88, so you may need to revisit this after an upgrade once that is released.
+Note that the directory layout for custom components changed in Home Assistant 0.88, so these instructions assume you're running a more recent version than that.
 
 * In your Home Assistant config directory, create a folder called `custom_components`, if you don't already have one. 
-* Within that, create a `weather` folder.
-* Download or check out the `cambridge_dcst.py` file and put it there, so you have:
+* Within that, create a `cambridge_dcst` folder.
+* Download or check out the `weather.py`, `__init__.py` and `manifest.json` files and put them there. An easy way is to change into that directory and do:
 
-      config/custom_components/weather/cambridge_dcst.py
+      wget -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/manifest.json
+      wget -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/__init__.py
+      wget -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/weather.py
+
+
+  So in your config directury you should have:
+
+      config/custom_components/cambridge_dcst/weather.py
+      config/custom_components/cambridge_dcst/__init__.py
+      config/custom_components/cambridge_dcst/manifest.json
 
 * Add the following lines to your `configuration.yaml`:
 
