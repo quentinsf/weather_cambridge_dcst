@@ -12,9 +12,9 @@ Note that the directory layout for custom components changed in Home Assistant 0
 * Within that, create a `cambridge_dcst` folder.
 * Download or check out the `weather.py`, `__init__.py` and `manifest.json` files and put them there. An easy way is to change into that directory and do:
 
-      wget -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/manifest.json
-      wget -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/__init__.py
-      wget -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/weather.py
+      curl -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/manifest.json
+      curl -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/__init__.py
+      curl -O https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/weather.py
 
 
   So in your config directury you should have:
