@@ -1,6 +1,6 @@
 # Changelog for weather_cambridge_dcst
 
-## Next release
+## version 0.2 - 2019-04-25
 
 Updated with new requirements for Home Assistant 0.92
 
