@@ -1,0 +1,9 @@
+{
+        "domain": "cambridge_dcst",
+        "name": "Cambridge Dept of Computer Science and Technology weather station",
+        "documentation": "https://github.com/quentinsf/weather_cambridge_dcst",
+        "requirements": [],
+        "dependencies": [],
+        "codeowners": ["@quentinsf"]
+}
+      

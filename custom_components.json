@@ -1,9 +1,14 @@
 {
     "weather_cambridge_dcst": {
-        "version":         "0.1",
-        "local_location":  "custom_components/weather/cambridge_dcst.py",
-        "remote_location": "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/cambridge_dcst.py",
+        "version":         "0.2",
+        "local_location":  "custom_components/cambridge_dcst/__init__.py",
+        "remote_location": "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/__init__.py",
         "changelog":       "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/CHANGELOG.md",
-        "visit_repo":      "https://github.com/quentinsf/weather_cambridge_dcst"
+        "visit_repo":      "https://github.com/quentinsf/weather_cambridge_dcst",
+        "resources": [
+            "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/manifest.json",
+            "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/__init__.py",
+            "https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/weather.py"
+        ]
     }
 }

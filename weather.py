@@ -1,5 +1,5 @@
 """
-Weather from the roof of the 
+Weather from the roof of the
 Cambridge Dept of Computer Science and Technology
 
 For more details about the source, please refer to
@@ -32,7 +32,7 @@ from homeassistant.components.weather import WeatherEntity
 from homeassistant.const import TEMP_CELSIUS
 from homeassistant.util import Throttle
 
-__version__ = '0.1'
+__version__ = '0.2'
 
 DOMAIN = 'cambridge_dcst_weather'
 URL = 'https://www.cl.cam.ac.uk/research/dtg/weather/current-obs.txt'
