@@ -4,7 +4,15 @@ There is a weather station on the roof of the Department of Computer Science & T
 
 This is a custom component for [Home Assistant](https://home-assistant.io) that will let you use it as a standard weather source.
 
-## Installation
+## Installation - HACS
+
+If you have the HACS (Home Assistant Community Store) component installed on your system, then you just need to got into its Settings page and add a custom repository:
+
+    https://github.com/quentinsf/weather_cambridge_dcst
+
+Then you should be able to install the component, and keep it updated, using HACS.
+
+## Installation - Manual
 
 Note that the directory layout for custom components changed in Home Assistant 0.88, so these instructions assume you're running a more recent version than that.
 
@@ -23,6 +31,10 @@ Note that the directory layout for custom components changed in Home Assistant 0
       config/custom_components/cambridge_dcst/__init__.py
       config/custom_components/cambridge_dcst/manifest.json
 
+## Configuration
+
+* If you were previously using `custom_updater` to keep track of updates, please remove references to this component from your configuration.  The switch to HACS has happened, and custom_updater will no longer give correct information.
+
 * Add the following lines to your `configuration.yaml`:
 
       weather:
@@ -39,13 +51,6 @@ In the Lovelace UI, you can use a standard 'weather_forecast` card:
     - entity: weather.cambridge_dcst
       type: weather-forecast
 
-## Getting updates
-
-An easy way to keep this and other components up to date is to use the [custom updater](https://github.com/custom-components/custom_updater).  If you've got this in your system, you can put the following in your configuration:
-
-    custom_updater:
-      component_urls:
-        - https://raw.githubusercontent.com/quentinsf/weather_cambridge_dcst/master/custom_updater.json
 
 ## Plotting the history
 
