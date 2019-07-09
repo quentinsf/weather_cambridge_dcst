@@ -6,7 +6,7 @@ This is a custom component for [Home Assistant](https://home-assistant.io) that 
 
 ## Installation - HACS
 
-If you have the HACS (Home Assistant Community Store) component installed on your system, then you just need to got into its Settings page and add a custom repository:
+If you have the [HACS](https://custom-components.github.io/hacs/) (Home Assistant Community Store) component installed on your system, then you just need to go into its Settings page and add a custom repository:
 
     https://github.com/quentinsf/weather_cambridge_dcst
 

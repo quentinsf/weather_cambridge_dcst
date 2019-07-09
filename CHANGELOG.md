@@ -1,5 +1,9 @@
 # Changelog for weather_cambridge_dcst
 
+## version 0.4 - 2019-07-09 
+
+Tweaks to documentation.
+
 ## version 0.3 - 2019-07-09 
 
 Reconfiguring for use with HACS.
