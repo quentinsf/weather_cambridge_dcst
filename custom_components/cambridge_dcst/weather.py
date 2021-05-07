@@ -32,7 +32,6 @@ from homeassistant.components.weather import WeatherEntity
 from homeassistant.const import TEMP_CELSIUS
 from homeassistant.util import Throttle
 
-__version__ = '0.4'
 
 DOMAIN = 'cambridge_dcst_weather'
 URL = 'https://www.cl.cam.ac.uk/research/dtg/weather/current-obs.txt'

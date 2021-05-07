@@ -1,5 +1,9 @@
 # Changelog for weather_cambridge_dcst
 
+## version 0.5 - 2021-05-07
+
+Put the version number in the manifest.
+
 ## version 0.4 - 2019-07-09 
 
 Tweaks to documentation.

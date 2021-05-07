@@ -4,6 +4,7 @@
         "documentation": "https://github.com/quentinsf/weather_cambridge_dcst",
         "requirements": [],
         "dependencies": [],
-        "codeowners": ["@quentinsf"]
+        "codeowners": ["@quentinsf"],
+        "version": "0.5"
 }
       
