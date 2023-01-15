@@ -96,22 +96,27 @@ class CambridgeWeather(WeatherEntity):
         self._rawdata.update(key_values)
 
     @property
-    def temperature(self) -> float:
+    def native_temperature(self) -> float:
         """ Return the temperature """
         # The raw data will be of the form '12.3 C'
         return float(self._rawdata["Temperature"].split()[0])
 
     @property
-    def temperature_unit(self):
+    def native_temperature_unit(self):
         """Return the unit of measurement."""
         return TEMP_CELSIUS
     
     @property
-    def pressure(self) -> float:
+    def native_pressure(self) -> float:
         """ Return the pressure """
         # The raw data will be of the form '1024 mBar'
         return float(self._rawdata["Pressure"].split()[0])
     
+    @property
+    def native_pressure_unit(self) -> str:
+        """ Return the pressure units """
+        return "mbar"
+
     @property
     def humidity(self) -> float:
         """ Return the humidity """
@@ -119,7 +124,7 @@ class CambridgeWeather(WeatherEntity):
         return float(self._rawdata["Humidity"].split()[0])
 
     @property
-    def wind_speed(self):
+    def native_wind_speed(self) -> float:
         """Return the wind speed."""
         # The raw data will be of the form '4 knots from the SSW'
         knots = float(self._rawdata["Wind"].split()[0])
@@ -127,7 +132,13 @@ class CambridgeWeather(WeatherEntity):
         return kmh
 
     @property
-    def wind_bearing(self):
+    def native_wind_speed_unit(self) -> str:
+        """Return the wind speed unit."""
+        # we converted it to km/h
+        return "km/h"
+
+    @property
+    def wind_bearing(self) -> float:
         """Return the approximate wind bearing."""
         # The raw data will be of the form '4 knots from the SSW'
         compass = self._rawdata["Wind"].split()[-1]
@@ -157,7 +168,7 @@ class CambridgeWeather(WeatherEntity):
         return bearing
 
     @property
-    def condition(self):
+    def condition(self) -> str:
         """Return the current condition."""
         return self._rawdata['Summary']
 

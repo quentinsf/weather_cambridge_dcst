@@ -1,5 +1,9 @@
 # Changelog for weather_cambridge_dcst
 
+## version 0.6 - 2023-01-15
+
+Don't override deprecated methods from WeatherEntity.
+
 ## version 0.5 - 2021-05-07
 
 Put the version number in the manifest.
