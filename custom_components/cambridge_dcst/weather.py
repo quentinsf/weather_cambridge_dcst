@@ -127,6 +127,7 @@ class CambridgeWeather(WeatherEntity):
     def native_wind_speed(self) -> float:
         """Return the wind speed."""
         # The raw data will be of the form '4 knots from the SSW'
+        # unless the speed is 0, in which case it will be '0 knots'
         knots = float(self._rawdata["Wind"].split()[0])
         kmh = knots * 1.852
         return kmh
@@ -141,6 +142,10 @@ class CambridgeWeather(WeatherEntity):
     def wind_bearing(self) -> float:
         """Return the approximate wind bearing."""
         # The raw data will be of the form '4 knots from the SSW'
+        # unless the speed is 0, in which case it will be '0 knots'
+        if self._rawdata["Wind"].split()[0] == '0':
+            return 0
+        
         compass = self._rawdata["Wind"].split()[-1]
         compass_points = {
             "N":   0,
