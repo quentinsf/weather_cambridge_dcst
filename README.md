@@ -1,8 +1,11 @@
 # Home Assistant Weather from the University of Cambridge
 
+NOTE: Jan 2024: The weather station is not as actively maintained as it used to be.  You may well find some components no longer return accurate results.  I'm not sure how long it will continue to be available.
+
 There is a weather station on the roof of the Department of Computer Science & Technology (formerly the Computer Lab), in the west part of Cambridge, UK.  For more information about it, see [the web page](https://www.cl.cam.ac.uk/research/dtg/weather/).
 
 This is a custom component for [Home Assistant](https://home-assistant.io) that will let you use it as a standard weather source.
+
 
 ## Installation - HACS
 
